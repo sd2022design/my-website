@@ -1,10 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-  <title>My GitHub Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ポートフォリオ | Webアプリケーションエンジニア</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f7fa;
+      color: #1a1a1a;
+    }
+    header {
+      background-color: #0a192f;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+      color: #8892b0;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    h2 {
+      color: #0a192f;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    .skills, .certifications {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .skill-item, .cert-item {
+      background-color: white;
+      border-left: 4px solid #0a192f;
+      padding: 15px 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      flex: 1 1 250px;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 10px;
+      background-color: #eaeaea;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <p>This is my first GitHub Page.</p>
+
+<header>
+  <h1>〇〇（あなたの名前）</h1>
+  <p>Webアプリケーションエンジニア | Vue.js / Python / Java</p>
+</header>
+
+<section>
+  <h2>スキルセット</h2>
+  <div class="skills">
+    <div class="skill-item">
+      <h3>Vue.js</h3>
+      <p>SPA構築やVue Router・Vuexを用いた開発経験があります。</p>
+    </div>
+    <div class="skill-item">
+      <h3>Python</h3>
+      <p>Web API開発、データ処理、Flask/Djangoの使用経験があります。</p>
+    </div>
+    <div class="skill-item">
+      <h3>Java</h3>
+      <p>業務系アプリケーション開発、Spring Frameworkの経験があります。</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>保有資格</h2>
+  <div class="certifications">
+    <div class="cert-item">
+      <h3>基本情報技術者試験</h3>
+      <p>情報処理推進機構（IPA）による国家資格。</p>
+    </div>
+    <div class="cert-item">
+      <h3>Java Silver（Oracle Certified Java Programmer）</h3>
+      <p>オラクル社認定のJava中級資格。</p>
+    </div>
+    <div class="cert-item">
+      <h3>Python 3 エンジニア認定基礎試験</h3>
+      <p>Pythonの基礎文法と実践力を証明する資格。</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>お問い合わせ: your.email@example.com | GitHub: <a href="https://github.com/yourusername">yourusername</a></p>
+</footer>
+
 </body>
 </html>
